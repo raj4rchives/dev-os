@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>370R JEE Advanced Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <div>
+      <h1>370R JEE Advanced Tracker</h1>
+      <div class="sub">15-day digital log → save progress → export the filled tracker as PDF.</div>
+    </div>
+    <div class="actions">
+      <button class="secondary" id="saveBtn">Save</button>
+      <button class="secondary" id="loadBtn">Load</button>
+      <button class="danger" id="clearBtn">Clear</button>
+      <button class="primary" id="pdfBtn">Download Filled PDF</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="settings">
+      <div class="small">
+        <label>Start date</label>
+        <input id="startDate" type="date">
+      </div>
+      <button class="secondary" id="datesBtn">Fill 15 dates</button>
+      <span class="badge">Target: 70–80 questions/day</span>
+    </div>
+    <p class="note">Enter what you actually studied. Homework/class-illustration cells can contain values like <b>18Q</b>, <b>done</b>, <b>12/15</b>, etc. The PDF export writes the same entries into the corresponding blank rows of your supplied template.</p>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><b id="daysDone">0/15</b><span>Days with entries</span></div>
+    <div class="stat"><b id="lecSum">0</b><span>Total lectures</span></div>
+    <div class="stat"><b id="pyqSum">0</b><span>Numeric PYQs</span></div>
+    <div class="stat"><b id="qTarget">0%</b><span>PYQ progress vs 15×70 target</span></div>
+  </div>
+
+  <div class="card">
+    <div class="table-wrap">
+      <table id="tracker">
+        <thead>
+          <tr>
+            <th>DATE</th>
+            <th>LEC TOTAL</th>
+            <th>PHY HW /<br>CLASS ILLU</th>
+            <th>CHEM HW /<br>CLASS ILLU</th>
+            <th>MATH HW /<br>CLASS ILLU</th>
+            <th>CHEM DPP</th>
+            <th>MATH DPP</th>
+            <th>PYQs TOTAL</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

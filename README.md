@@ -1,25 +1,15 @@
-# DevOS
+# 370R JEE Advanced Tracker
 
-Separate frontend structure for a developer consultation platform.
+GitHub Pages-ready static website.
 
-Main:
-- index.html
-- login.html
-- signup.html
-- dashboard/index.html
-- developer/index.html
+## Files
+- `index.html` — page structure
+- `style.css` — all styling
+- `script.js` — tracker logic, save/load, dates, stats and PDF export
+- `tracker-template.png` — original tracker template
 
-Separate admin:
-- admin/index.html
-- admin/users.html
-- admin/developers.html
-- admin/payments.html
-- admin/meetings.html
-- admin/themes.html
-- admin/pricing.html
-- admin/settings.html
+## GitHub Pages
+Upload all four files to the root of a GitHub repository.
+Then: Settings → Pages → Deploy from branch → `main` → `/ (root)` → Save.
 
-This is a frontend starter. For production, connect Supabase Auth/PostgreSQL, protected admin roles, Razorpay and real-time audio/video.
-
-## Android/Vercel
-Upload the extracted files to GitHub preserving folders, then import the repository into Vercel.
+Keep `tracker-template.png` in the same folder as `index.html`.
